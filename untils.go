@@ -1,8 +1,8 @@
 package gcToWg
 
-import {
+import (
 	"math"
-}
+)
 
 const (
 	PI float64 = 3.14159265358979324
