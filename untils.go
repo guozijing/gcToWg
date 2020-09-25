@@ -32,7 +32,7 @@ func transform_lat (x, y float64) (float64) {
 }
 
 func transform_lng (x, y float64) (float64) {
-	ret := 300.0 + x + 2.0 * y + 0.1 * x * x + 0.1 * x * y + 0.1 * math.Sqrt(math.Sbs(x));
+	ret := 300.0 + x + 2.0 * y + 0.1 * x * x + 0.1 * x * y + 0.1 * math.Sqrt(math.Abs(x));
 	ret += (20.0 * math.Sin(6.0 * x * PI) + 20.0 * math.Sin(2.0 * x * PI)) * 2.0 / 3.0;
 	ret += (20.0 * math.Sin(x * PI) + 40.0 * math.Sin(x / 3.0 * PI)) * 2.0 / 3.0;
 	ret += (150.0 * math.Sin(x / 12.0 * PI) + 300.0 * math.Sin(x / 30.0 * PI)) * 2.0 / 3.0;
